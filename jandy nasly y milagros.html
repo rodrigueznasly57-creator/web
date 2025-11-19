@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Paleoclimatología</title>
+
+<style>
+body {
+  margin: 0;
+  background-color: #ffeef5;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #d63384;
+  text-shadow: 1px 1px 2px black;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+  font-family: 'Courier New', monospace;
+}
+
+p, li {
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img.imagen-pequena {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #2c3e50;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebar a:hover {
+  background-color: #34495e;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+.caja {
+  display: none;
+  background: #fcd6e2;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px #555;
+  margin-top: 20px;
+}
+.caja.active {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BARRA LATERAL -->
+<div class="sidebar">
+  <a onclick="mostrarSeccion('inicio')">Inicio</a>
+  <a onclick="mostrarSeccion('ciencias')">Ciencias</a>
+  <a onclick="mostrarSeccion('ingles')">Inglés</a>
+  <a onclick="mostrarSeccion('espanol')">Español</a>
+  <a onclick="mostrarSeccion('edfisica')">Ed. Física</a>
+  <a onclick="mostrarSeccion('edambiental')">Ed. Ambiental</a>
+  <a onclick="mostrarSeccion('informatica')">Informática</a>
+  <a onclick="mostrarSeccion('matematicas')">Matemáticas</a>
+</div>
+
+<!-- CONTENIDO -->
+<div class="content">
+  <h1>Paleoclimatología</h1>
+
+  <!-- INICIO -->
+  <div class="caja active" id="inicio">
+    <h2>Bienvenido</h2>
+    <p>La <b>paleoclimatología</b> estudia los climas del pasado usando evidencias como hielos, anillos de árboles, sedimentos y fósiles.</p>
+
+    <h3>¿Cómo se estudia?</h3>
+    <ul>
+      <li><b>Hielos polares:</b> guardan burbujas de aire antiguas.</li>
+      <li><b>Sedimentos:</b> muestran restos de organismos.</li>
+      <li><b>Anillos de árboles:</b> indican clima año por año.</li>
+      <li><b>Corales y cuevas:</b> guardan información química del clima.</li>
+<li><b>NOMBRE DE ESTUDIANTES:JANDY TORRES,MILAGRO URDANETA,NASLY RODRIGUEZ Y DAYANA NARVAEZ</li>
+    </ul>
+
+    <h3>Imágenes</h3>
+    <img class="imagen-pequena" src="https://img.freepik.com/vector-gratis/ilustracion-sequia-dibujada-mano_23-2151316927.jpg" alt="Sequía">
+    <img class="imagen-pequena" src="https://img.freepik.com/vector-gratis/ilustracion-contaminaciones-tierra_1308-39766.jpg" alt="Contaminación">
+    <img class="imagen-pequena" src="https://media.istockphoto.com/id/1473888113/es/vector/energ%C3%ADa-renovable-y-acuarela-de-tierra.jpg" alt="Energía renovable">
+  </div>
+
+  <!-- CIENCIAS -->
+  <div class="caja" id="ciencias">
+    <h2>Ciencias</h2>
+    <p>En ciencias aprendimos sobre la paleoclimatología usando indicadores naturales.</p>
+    <img class="imagen-pequena" src="https://i.pinimg.com/1200x/6e/79/dc/6e79dc1bc4bfbf7e93631c604f4cb02a.jpg">
+  </div>
+
+  <!-- INGLÉS -->
+  <div class="caja" id="ingles">
+    <h2>Inglés</h2>
+    <p>Realizamos un glosario, oraciones, línea de tiempo e historieta.</p>
+
+    <img class="imagen-pequena" src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png">
+    <img class="imagen-pequena" src="https://cdn-icons-png.flaticon.com/512/471/471662.png">
+
+    <a href="#" class="boton-pdf">Abrir PDF de Inglés</a>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div class="caja" id="espanol">
+    <h2>Español</h2>
+    <p>Creamos una historia original relacionada con la paleoclimatología.</p>
+  </div>
+
+  <!-- EDUCACIÓN FÍSICA -->
+  <div class="caja" id="edfisica">
+    <h2>Educación Física</h2>
+    <p>Hicimos actividades al aire libre midiendo temperatura, pulso y respiración.</p>
+
+    <img class="imagen-pequena" src="https://cdn-icons-png.flaticon.com/512/69/69524.png">
+  </div>
+
+  <!-- EDUCACIÓN AMBIENTAL -->
+  <div class="caja" id="edambiental">
+    <h2>Educación Ambiental</h2>
+    <p>Estudiamos cómo proteger los ecosistemas y los efectos del cambio climático.</p>
+
+    <h3>Video</h3>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/oOwEsU5zrmI"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- INFORMÁTICA -->
+  <div class="caja" id="informatica">
+    <h2>Informática</h2>
+    <p>Aprendimos a crear páginas web usando HTML y CSS.</p>
+  </div>
+
+  <!-- MATEMÁTICAS -->
+  <div class="caja" id="matematicas">
+    <h2>Matemáticas</h2>
+    <p>Analizamos gráficos de temperatura y estadísticas climáticas.</p>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function mostrarSeccion(id) {
+  document.querySelectorAll('.caja').forEach(caja => {
+    caja.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
